@@ -154,8 +154,7 @@
       cursor: pointer;
     }
 
-    .click-to-call,
-    .schedule-btn {
+    .click-to-call {
       display: block;
       text-align: center;
       margin-top: 15px;
@@ -179,7 +178,6 @@
   </style>
 </head>
 <body>
-  <!-- Header / Hero -->
   <header class="hero">
     <div class="container">
       <img src="icon.png" alt="MEGA Locksmith Logo" class="logo" />
@@ -200,7 +198,6 @@
     </div>
   </header>
 
-  <!-- Services Section -->
   <section id="services" class="services">
     <h2>Our Services</h2>
     <div class="service-grid">
@@ -221,12 +218,12 @@
         🛠️ Lock Installation
       </div>
       <div class="service-item">
-        <img src="key-duplication.jpeg" alt="Key Duplication" style="width:100%; border-radius:6px; margin-bottom:10px;">
-        🔑 Key Duplication
+        <img src="commercial-locks.png" alt="Commercial Locks" style="width:100%; border-radius:6px; margin-bottom:10px;">
+        🏢 Commercial Locks
       </div>
+    </div>
   </section>
 
-  <!-- Trust Section -->
   <section class="trust">
     <div class="trust-icons">
       <span>✅ Licensed, Bonded & Insured</span>
@@ -235,7 +232,6 @@
     </div>
   </section>
 
-  <!-- Testimonials -->
   <section id="testimonials" class="testimonials">
     <h2>What Our Clients Say</h2>
     <div class="testimonial-slider">
@@ -245,41 +241,38 @@
     </div>
   </section>
 
-  <!-- About Us -->
   <section id="about" class="about">
     <h2>About MEGA Locksmith</h2>
     <p>We’re a trusted locksmith service with over 10 years of experience. Serving the community 24/7, we value your security and peace of mind. Whether you're locked out or need key services, we respond quickly and professionally.</p>
   </section>
 
-  <!-- Contact / Booking -->
   <section id="contact" class="contact">
     <h2>Contact Us</h2>
     <form class="contact-form" action="https://formspree.io/f/myzjllpa" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="tel" name="phone" placeholder="Phone Number" required />
-        <select name="service" required>
-          <option value="">Select Service</option>
-          <option value="House Lockout">House Lockout</option>
-          <option value="Car Lockout">Car Lockout</option>
-          <option value="Lock Rekey">Lock Rekey</option>
-          <option value="Lock Installation">Lock Installation</option>
-          <option value="Key Duplication">Key Duplication</option>
-        </select>
-        <input type="hidden" name="_subject" value="New Service Request from MEGA Locksmith">
-        <button type="submit">Request Service</button>
-      </form>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <select name="service" required>
+        <option value="">Select Service</option>
+        <option value="House Lockout">House Lockout</option>
+        <option value="Car Lockout">Car Lockout</option>
+        <option value="Lock Rekey">Lock Rekey</option>
+        <option value="Lock Installation">Lock Installation</option>
+        <option value="Commercial Locks">Commercial Locks</option>
+      </select>
+      <input type="hidden" name="_subject" value="New Service Request from MEGA Locksmith">
+      <button type="submit">Request Service</button>
+    </form>
     <a href="tel:+1234567890" class="click-to-call">📞 Click to Call</a>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="footer-content">
       <p>📞 (123) 456-7890 | ✉️ info@megalocksmith.com</p>
-      <p>© MEGA Locksmith | <a href="#">Privacy Policy</a></p>
+      <p>© MEGA Locksmith</p>
     </div>
   </footer>
+
   <script>
-    // Testimonial slider logic
     const testimonials = document.querySelectorAll('.testimonial');
     let current = 0;
     setInterval(() => {
